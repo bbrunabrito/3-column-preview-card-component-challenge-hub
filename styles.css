@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px */
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --main-text: hsl(0, 0%, 95%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 15px;
+    margin: 2rem auto;
+    background: var(--paragraphs);
+}
+
+h1, button {
+    font-family: 'Big Shoulders Display', sans-serif;
+
+}
+
+
+span {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--paragraphs);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.container div{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    padding: 2.5rem;
+}
+
+
+ img, h1 {
+    margin-bottom: 2rem;
+}
+
+
+.sedans {
+    background: var(--orange);
+}
+
+.suvs {
+    background: var(--dark-cyan);
+}
+
+.luxury {
+    background: var(--very-dark);
+}
+
+button {
+    width: 9rem;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    border: 0;
+    border-radius: 25px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.sedans button {
+    color: var(--orange);
+}
+
+.suvs button {
+    color: var(--dark-cyan);
+}
+
+.luxury button {
+    color: var(--very-dark);
+}
+
+button:hover {
+    background: transparent;
+    border: 2px #fff solid;
+    color: #fff;
+}
+
+
+
